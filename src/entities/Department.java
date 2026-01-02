@@ -2,17 +2,17 @@ package entities;
 
 import java.io.Serializable;
 
-public class Departament implements Serializable {
+public class Department implements Serializable {
   private static final long serialVersionUID = 1L;
   private String name;
   private int id;
 
-  public Departament(String name, int id) {
+  public Department(String name, int id) {
     this.name = name;
     this.id = id;
   }
 
-  public Departament() {
+  public Department() {
   }
 
   public String getName() {
@@ -47,7 +47,7 @@ public class Departament implements Serializable {
       return false;
     if (getClass() != obj.getClass())
       return false;
-    Departament other = (Departament) obj;
+    Department other = (Department) obj;
     if (id != other.id)
       return false;
     return true;
@@ -55,7 +55,7 @@ public class Departament implements Serializable {
 
   @Override
   public String toString() {
-    return "Departament [name=" + name + ", id=" + id + "]";
+    return "Department [name=" + name + ", id=" + id + "]";
   }
 
 }
